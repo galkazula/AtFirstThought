@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="he">
+<title>במחשבה תחילה</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js'></script>
+
+<script src="./script.js"></script>
+<script src="libraries/p5.min.js"></script>
+<!-- <script src="libraries/p5.js-sound-1.0.1/"></script> -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon_logo.ico" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+
+
+</head>
+
+
+
+
+<section class="et-hero-tabs" id="main-start">
+
+    <!-- <canvas>
+        <script src="sketch.js"></script>
+
+    </canvas> -->
+    <img src="biglogo.png" id="img">
+    <h1>במחשבה תחילה</h1>
+    <h3>ייעוץ ופיתוח הדרכה באמצעות אתגרי חשיבה</h3>
+    <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-contactus">צרו קשר</a>
+        <a class="et-hero-tab" href="#tab-gallery">גלריה</a>
+        <a class="et-hero-tab" href="#tab-aboutus">מה מספרים עלינו</a>
+        <a class="et-hero-tab" href="#tab-react">מי אנחנו</a>
+        <a class="et-hero-tab" href="#tab-flexbox">מה אנחנו עושים </a>
+        <a class="et-hero-tab" href="#tab-es6">במחשבה תחילה</a>
+        <a class="et-hero-tab1" id="logo-tab" href="#main-start"> <img src="biglogo.png" alt="logo">
+        </a>
+
+
+
+
+        <span class="et-hero-tab-slider"></span>
+
+    </div>
+
+</section>
+
+<!-- Main -->
+<main class="et-main">
+    <section class="et-slide" id="tab-es6">
+        <link rel="stylesheet" type="text/css" href="tab-fleabox.css">
+<p>חברת במחשבה תחילה מתמחה בייעוץ בפיתוח הדרכה למגוון קהלי יעד ומסגרות, שהמשותף לכולן הוא למידה מתוך הנאה, באמצעות משחקי חשיבה ואתגר:</p>
+        <div class="container box-wrapper">
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="et-slide" id="tab-flexbox">
+        <style>
+            @import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
+             :root {
+                --user-button-circle: rgba(0, 0, 0, 0.025);
+                --user-button-cardborder: rgba(255, 255, 255, 0.25);
+                --user-button-text: #323133;
+                --user-button-shadow: rgba(0, 0, 0, 0.1);
+            }
+            
+            #user-button {
+                z-index: 1000;
+                bottom: 1rem !important;
+                right: 1rem !important;
+                color: var(--user-button-text);
+                transition: 1s 0s ease-out;
+                -webkit-animation: slide 3s ease-out forwards;
+                animation: slide 3s ease-out forwards;
+            }
+            
+            @-webkit-keyframes slide {
+                0%,
+                50% {
+                    opacity: 0;
+                    display: block !important;
+                }
+                100% {
+                    opacity: 1;
+                    display: block !important;
+                }
+            }
+            
+            @keyframes slide {
+                0%,
+                50% {
+                    opacity: 0;
+                    display: block !important;
+                }
+                100% {
+                    opacity: 1;
+                    display: block !important;
+                }
+            }
+            
+            #user-button .u-card {
+                border-radius: 100%;
+                box-shadow: 0 0 1rem -0.25rem var(--user-button-shadow), inset 0 0 1rem -0.75rem var(--user-button-shadow);
+            }
+            
+            #user-button .u-main {
+                cursor: pointer;
+                --user-button-background: var(--user-button-main, #EC87C0);
+            }
+            
+            #user-button .u-main img {
+                height: 100%;
+                width: 100%;
+            }
+            
+            #user-button .u-main iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 4rem;
+                height: 4rem;
+                opacity: 1;
+                transition: 0s 4s;
+            }
+            
+            #user-button .u-icons {
+                position: relative;
+                z-index: 950;
+                transform: translate(-50%, -50%);
+                background: var(--user-button-circle);
+                box-shadow: 0 0 0 0.125rem var(--user-button-cardborder);
+                border-radius: 100%;
+                transition: 0.25s;
+                opacity: 1 !important;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                /*&:before {
+     z-index:-1;
+     position:absolute;
+     top:0; right:0; bottom:0; left:0;
+     content:'';
+
+     backdrop-filter: blur(10px);
+  }*/
+            }
+            
+            #user-button .u-icons a {
+                color: inherit;
+                display: grid;
+                place-items: center;
+                width: 30px;
+                height: 30px;
+                text-decoration: none;
+            }
+            
+            #user-button .u-icons a div {
+                padding: 0.5rem;
+                transition: 0s;
+            }
+            
+            #user-button .u-icons a[href="https://twitter.com/Osorpenke"] {
+                position: relative;
+            }
+            
+            #user-button .u-icons a[href="https://twitter.com/Osorpenke"]:before {
+                content: "Middle Click";
+                position: absolute;
+                top: -1.5rem;
+                left: 50%;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                white-space: pre;
+                transform: translateX(-50%);
+                opacity: 0;
+                pointer-events: none;
+                transition: 0.25s ease-in;
+                background: #fffc;
+                padding: 0.25rem 0.5rem;
+                border-radius: 0.25rem;
+            }
+            
+            #user-button .u-icons a[href="https://twitter.com/Osorpenke"].show:before {
+                opacity: 1;
+                transition: 0.25s ease-out;
+            }
+            
+            #user-button .u-icons a[href="https://twitter.com/Osorpenke"] div {
+                color: #1da1f2;
+            }
+            
+            #user-button .u-icons a[href="https://codepen.io/z-"] div {
+                background: black;
+                color: white;
+            }
+            
+            #user-button .u-icons a.u-random div {
+                position: relative;
+                top: -1px;
+                -webkit-animation: diespin 2s linear infinite;
+                animation: diespin 2s linear infinite;
+            }
+            
+            @-webkit-keyframes diespin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            
+            @keyframes diespin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            
+            #user-button .u-icons a.u-random:not(:hover) div {
+                -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+            }
+            
+            #user-button .u-icons>* {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background: var(--singlecolour);
+                border-radius: 100%;
+                cursor: pointer;
+                transform: translate(-50%, -50%);
+                transition: 0.25s -0.05s;
+            }
+            
+            #user-button .u-icons>*:before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            #user-button .u-icons>*:hover,
+            #user-button .u-icons>*:focus-within {
+                background: var(--hcolour);
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(1):nth-child(1),
+            #user-button .u-icons>*:first-child:nth-last-child(1)~*:nth-child(1) {
+                left: 25%;
+                top: 25%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(2):nth-child(1),
+            #user-button .u-icons>*:first-child:nth-last-child(2)~*:nth-child(1) {
+                left: 37.5%;
+                top: 18.75%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(2):nth-child(2),
+            #user-button .u-icons>*:first-child:nth-last-child(2)~*:nth-child(2) {
+                left: 18.75%;
+                top: 37.5%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(3):nth-child(1),
+            #user-button .u-icons>*:first-child:nth-last-child(3)~*:nth-child(1) {
+                left: 50%;
+                top: 15.625%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(3):nth-child(2),
+            #user-button .u-icons>*:first-child:nth-last-child(3)~*:nth-child(2) {
+                left: 25%;
+                top: 25%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(3):nth-child(3),
+            #user-button .u-icons>*:first-child:nth-last-child(3)~*:nth-child(3) {
+                left: 15.625%;
+                top: 50%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(4):nth-child(1),
+            #user-button .u-icons>*:first-child:nth-last-child(4)~*:nth-child(1) {
+                left: 62.5%;
+                top: 18.75%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(4):nth-child(2),
+            #user-button .u-icons>*:first-child:nth-last-child(4)~*:nth-child(2) {
+                left: 37.5%;
+                top: 18.75%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(4):nth-child(3),
+            #user-button .u-icons>*:first-child:nth-last-child(4)~*:nth-child(3) {
+                left: 18.75%;
+                top: 37.5%;
+            }
+            
+            #user-button .u-icons>*:first-child:nth-last-child(4):nth-child(4),
+            #user-button .u-icons>*:first-child:nth-last-child(4)~*:nth-child(4) {
+                left: 18.75%;
+                top: 62.5%;
+            }
+            
+            #user-button:hover .u-icons,
+            #user-button:focus-within .u-icons {
+                width: 300% !important;
+                height: 300% !important;
+            }
+            /* body {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                height: 100vh;
+                font-family: "Roboto", sans-serif;
+                transition: 0.25s;
+            } */
+            
+            .dark {
+                background: #232223;
+                color: white;
+            }
+            
+            @media (prefers-color-scheme: dark) {
+                 :not(.light) {
+                    background: #232223;
+                    color: white;
+                }
+            }
+            
+            .credit {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                color: inherit;
+            }
+            
+            .options {
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+                overflow: hidden;
+                min-width: 600px;
+                max-width: 900px;
+                width: calc(100% - 100px);
+                height: 400px;
+            }
+            
+            @media screen and (max-width: 718px) {
+                .options {
+                    min-width: 520px;
+                }
+                .options .option:nth-child(5) {
+                    display: none;
+                }
+            }
+            
+            @media screen and (max-width: 638px) {
+                .options {
+                    min-width: 440px;
+                }
+                .options .option:nth-child(4) {
+                    display: none;
+                }
+            }
+            
+            @media screen and (max-width: 558px) {
+                .options {
+                    min-width: 360px;
+                }
+                .options .option:nth-child(3) {
+                    display: none;
+                }
+            }
+            
+            @media screen and (max-width: 478px) {
+                .options {
+                    min-width: 280px;
+                }
+                .options .option:nth-child(2) {
+                    display: none;
+                }
+            }
+            
+            .options .option {
+                position: relative;
+                overflow: hidden;
+                min-width: 60px;
+                margin: 10px;
+                background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+                background-size: auto 120%;
+                background-position: center;
+                cursor: pointer;
+                transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+            }
+            
+            .options .option:nth-child(1) {
+                --defaultBackground: #ED5565;
+            }
+            
+            .options .option:nth-child(2) {
+                --defaultBackground: #FC6E51;
+            }
+            
+            .options .option:nth-child(3) {
+                --defaultBackground: #FFCE54;
+            }
+            
+            .options .option:nth-child(4) {
+                --defaultBackground: #2ECC71;
+            }
+            
+            .options .option:nth-child(5) {
+                --defaultBackground: #5D9CEC;
+            }
+            
+            .options .option:nth-child(6) {
+                --defaultBackground: #AC92EC;
+            }
+            
+            .options .option.active {
+                flex-grow: 10000;
+                transform: scale(1);
+                max-width: 600px;
+                margin: 0px;
+                border-radius: 40px;
+                background-size: auto 100%;
+                /*&:active {
+     transform:scale(0.9);
+  }*/
+            }
+            
+            .options .option.active .shadow {
+                box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+            }
+            
+            .options .option.active .label {
+                bottom: 20px;
+                left: 20px;
+            }
+            
+            .options .option.active .label .info>div {
+                left: 0px;
+                opacity: 1;
+            }
+            
+            .options .option:not(.active) {
+                flex-grow: 1;
+                border-radius: 30px;
+            }
+            
+            .options .option:not(.active) .shadow {
+                bottom: -40px;
+                box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+            }
+            
+            .options .option:not(.active) .label {
+                bottom: 10px;
+                left: 10px;
+            }
+            
+            .options .option:not(.active) .label .info>div {
+                left: 20px;
+                opacity: 0;
+            }
+            
+            .options .option .shadow {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                height: 120px;
+                transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+            }
+            
+            .options .option .label {
+                display: flex;
+                position: absolute;
+                right: 0px;
+                height: 40px;
+                transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+            }
+            
+            .options .option .label .icon {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                min-width: 40px;
+                max-width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background-color: white;
+                color: var(--defaultBackground);
+            }
+            
+            .options .option .label .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 10px;
+                color: white;
+                white-space: pre;
+            }
+            
+            .options .option .label .info>div {
+
+                
+                position: relative;
+                transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+            }
+            
+            .options .option .main {
+                font-weight: bold;
+                font-size: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 10px;
+                color: white;
+                white-space: pre;
+            }
+                        .options .option .label .info>div {
+
+                
+                position: relative;
+                transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+            }
+            
+            .options .option .label .info .sub {
+                transition-delay: 0.1s;
+                
+            }
+             .options .option.active.MainText  {
+                        direction: rtl;
+                        margin-top:auto;
+                        color: #ffffff;
+                        text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                        stroke-width: 1px;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        
+                    } 
+                    .options .option:not(.active) .option.active.MainText>div{
+                        position: relative;
+                transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+                    }
+
+        </style>
+
+        <div class="options">
+            <div class="option active" style="background-image: url(media/WhatAreWeDoing/Real/1360x1546.jpg);">
+                <div class="shadow"></div>
+                <!-- <div class="main">פיתוח חשיבה יצירתית בעולם העסקי</div> -->
+
+                <!-- <div class="MainText">
+                    יצירתיות היא שם המשחק היום ואנו זקוקים לה ומשתמשים בה בכל תחום.
+
+                    שיטת Play the Game היא שיטה חדשנית המשתמשת בעולם המשחקים ובחווית המשחק לפיתוח מיומנויות חשיבה ולהקניית כלים מעשיים לחשיבה יצירתית.
+                    חברת במחשבה תחילה מציעה סדנה חוייתית ייחודית לפיתוח חשיבה יצירתית, באמצעות משחקים, חידות, הומור, פרובקציות וטכניקות מגוונות נוספות.
+                    
+                </div> -->
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+
+                    <div class="info">
+                        <div class="main">פיתוח חשיבה יצירתית בעולם העסקי</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(media/WhatAreWeDoing/Real/1360x1632.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">תוכניות לימודים והעשרה לבתי ספר</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(media/WhatAreWeDoing/Real/1360x2546-e1544544537108.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">חוגי משחקי חשיבה</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(media/WhatAreWeDoing/Real/bret_rdyer_beck_greener-1.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">סדנאות שטח O.D.T</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(media/WhatAreWeDoing/Real/brett_ryder_fenwick_badger.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">אירועי פנאי וגיבוש</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(media/WhatAreWeDoing/Real/brett_ryder_fenwick_heron.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">הקמת מרכזי חשיבה וחדרי משחק</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(media/WhatAreWeDoing/Real/brett_ryder_sandi_toksvig_15-1.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">ייעוץ והכוונה ברכישת משחקים</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".option").click(function() {
+                $(".option").removeClass("active");
+                $(this).addClass("active");
+
+            });
+        </script>
+
+    </section>
+    <section class="et-slide" id="tab-react">
+
+
+    </section>
+
+    <section class="et-slide" id="tab-aboutus" style="background-color: #585c65;">
+        <link rel="stylesheet" type="text/css" href="tab-aboutus.css">
+        
+            <link rel="stylesheet" type="text/css" href="tab-fleabox.css">
+            <link rel="stylesheet" type="text/css" href="whattheythis.css">
+            <div class="container1">
+                <div class="column1">
+                  <div class="add-info"  data-title="html"></div>
+ 
+                  <div class="paragraph1">
+                    <h1 >First Item</h1>
+                    <p>Lorem ipsum dolor sit amet, mea soleat feugait dignissim ea. Ei pri idque blandit iracundia, nec honestatis dissentiunt ne. Per sonet tibique deseruisse et. Vix at essent ancillae, cum at quem amet dissentiunt. Has dolore legimus at. Solet ceteros mel eu, vocibus postulant mel cu.</p>
+                    <button class="blue-btn view-btn">view!</button>
+                  </div>
+                </div>
+              
+
+            <!-- <div class="container">
+                <div class="box"></div>
+
+            </div> -->
+        <div class="slider-wrap">
+            <div id="card-slider" class="slider">
+                <div class="slider-item">
+                    <div class="animation-card_image">
+                        <img src="https://piano-center.co.il/wp-content/uploads/2020/09/Asset-2.png" style="width: 53px ;
+                        height: 53px;
+                        border-radius: 50% ;
+                        object-fit:contain; " alt="מכבי">
+                    </div>
+                    <div class="animation-card_content">
+                        <h4 class="animation-card_content_title title-2">מכבי שירותי בריאות</h4>
+                        <p class="animation-card_content_description p-2">"הוזמנתם לערב גיבוש סטנדרטי ב"מכבי" והוכחתם לנו, שאפשר לרצות את כולם. הבנות לא רצו ללכת הביתה וכנראה שזה אומר הכול. להתראות במשחק הבא!"</p>
+                        <p class="animation-card_content_city">קרן מרכז המכונים קופת חולים מכבי</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="animation-card_image">
+                        <img src="https://serviced.co.il/wp-content/uploads/2021/06/AIG-%D7%A9%D7%99%D7%A8%D7%95%D7%AA-%D7%9C%D7%A7%D7%95%D7%97%D7%95%D7%AA-%D7%9C%D7%95%D7%92%D7%95.jpg" style="                width: 53px ;
+                        height: 53px;
+                        border-radius: 50% ;
+                        object-fit: contain;" alt="AIG">
+                    </div>
+                    <div class="animation-card_content">
+                        <h4 class="animation-card_content_title title-2">AIG</h4>
+                        <p class="animation-card_content_description p-2">" סדנה נהדרת!! ענה על הצרכים של סדנת המנהלים ל"שנת המעוף" בארגון, הרבה מעל המצופה"</p>
+                        <p class="animation-card_content_city">תמר שקל מנהלת הדרכה</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="animation-card_image">
+                        <img src="https://www.segment.co.il/wp-content/uploads/2017/04/MOD.jpg" style="                width: 53px ;
+                        height: 53px;
+                        border-radius: 50% ;
+                        object-fit: cover;" alt="">
+                    </div>
+                    <div class="animation-card_content">
+                        <h4 class="animation-card_content_title title-2">משרד הביטחון</h4>
+                        <p class="animation-card_content_description p-2">"סדנאות שטח יש רבות אבל איתך זה משהו אחר - הן תמיד מצליחות לגעת במקומות הכי משמעותיים. כמומחית להדרכה, שאלתי את עצמי איך אתה עושה זאת ואז גילתי: יכולתך להתחבר לכל קבוצה, על כל פרטיה ולתת מענה אנושי ומקצועי לכולם, ללא יוצא מן הכלל,
+                            גורמת לקבוצה להתמסר ולהיות קשובה. תודה על השיעור בהדרכה"</p>
+                        <p class="animation-card_content_city">מנהלת הדרכה משרד הביטחון</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="animation-card_image">
+                        <img src="https://www.gannot.com/wp-content/uploads/2018/08/%D7%9E%D7%9C%D7%95%D7%9F-%D7%A7%D7%99%D7%91%D7%95%D7%A5-%D7%9C%D7%91%D7%99%D7%90.jpg" style="                width: 53px ;
+                        height: 53px;
+                        border-radius: 50% ;
+                        object-fit: contain;" alt="Malon Lavi">
+                    </div>
+                    <div class="animation-card_content">
+                        <h4 class="animation-card_content_title title-2">מלון קיבוץ לביא</h4>
+                        <p class="animation-card_content_description p-2"> "הרומן שלנו אתכם נמשך למעלה מ 6 שנים. בכל חג ולאורך כל קיץ אנו נפגשים תמיד בדיוק בזמן בחדווה ובחיוך לחוויה של משחק. אורחינו הקבועים לא מפסיקים להתפעם מיכולתכם לאתגר ולחדש ומצפים לכם מביקור לביקור. אנו מחכים לעוד שנים של שיתוף פעולה"</p>
+                        <p class="animation-card_content_city">נחמיה, מנהל האירועים מלון לביא - גליל תחתון</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="animation-card_image">
+                        <img src="https://uznayvse.ru/images/stories2016/uzn_1460039478.jpg" style="                width: 53px ;
+                        height: 53px;
+                        border-radius: 50% ;
+                        object-fit: cover;" alt="">
+                    </div>
+                    <div class="animation-card_content">
+                        <h4 class="animation-card_content_title title-2">Charlize Theron 5</h4>
+                        <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                        <p class="animation-card_content_city">New York, NY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="et-slide" id="tab-gallery">
+        <link rel="stylesheet" type="text/css" href="tab-gallery.css">
+
+        <div class="CSSgal">
+
+            <!-- Don't wrap targets in parent -->
+            <s id="s1"></s>
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
+
+            <div class="slider">
+                <div style="background:#5b8;">
+                    <h2>PURE <b>CSS</b> SLIDESHOW</h2>
+                    <p>Responsive Slideshow Gallery created using CSS only<br>by Roko</p>
+                </div>
+                <div style="background:#85b;">
+                    <h2>Slide 2</h2>
+                </div>
+                <div style="background:#e95;">
+                    <h2>Slide 3</h2>
+                </div>
+                <div style="background:#e59;">
+                    <h2>Slide 4</h2>
+                </div>
+            </div>
+
+            <div class="prevNext">
+                <div>
+                    <a href="#s4"></a>
+                    <a href="#s2"></a>
+                </div>
+                <div>
+                    <a href="#s1"></a>
+                    <a href="#s3"></a>
+                </div>
+                <div>
+                    <a href="#s2"></a>
+                    <a href="#s4"></a>
+                </div>
+                <div>
+                    <a href="#s3"></a>
+                    <a href="#s1"></a>
+                </div>
+            </div>
+
+            <div class="bullets">
+                <a href="#s1">1</a>
+                <a href="#s2">2</a>
+                <a href="#s3">3</a>
+                <a href="#s4">4</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="et-slide" id="tab-contactus">
+        <link rel="stylesheet" type="text/css" href="tab-contactus.css">
+
+        <h1>צרו קשר</h1>
+        <form class="cf">
+            <div class="half left cf">
+                <input type="text" id="input-name" placeholder="שם מלא">
+                <input type="email" id="input-email" placeholder='דוא"ל'>
+                <input type="text" id="input-subject" placeholder="נושא הפנייה">
+            </div>
+            <div class="half right cf">
+                <textarea name="message" type="text" id="input-message" placeholder="הודעה"></textarea>
+            </div>
+            <input type="submit" value="שלח" id="input-submit">
+        </form>
+    </section>
+</main>
+<script> src = "https://smtpjs.com/v3/smtp.js"
+function sendEmail(){
+    Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);   
+}
+</script>
+
+<script>
+    class StickyNavigation {
+
+        constructor() {
+            this.currentId = null;
+            this.currentTab = null;
+            this.tabContainerHeight = 70;
+            let self = this;
+            $('.et-hero-tab').click(function() {
+                self.onTabClick(event, $(this));
+            });
+            $(window).scroll(() => {
+                this.onScroll();
+            });
+            $(window).resize(() => {
+                this.onResize();
+            });
+        }
+
+        onTabClick(event, element) {
+            event.preventDefault();
+            let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+            $('html, body').animate({
+                scrollTop: scrollTop
+            }, 600);
+        }
+
+        onScroll() {
+            this.checkTabContainerPosition();
+            this.findCurrentTabSelector();
+        }
+
+        onResize() {
+            if (this.currentId) {
+                this.setSliderCss();
+            }
+        }
+
+        checkTabContainerPosition() {
+            let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
+            if ($(window).scrollTop() > offset) {
+                $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
+            } else {
+                $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
+            }
+        }
+
+        findCurrentTabSelector(element) {
+            let newCurrentId;
+            let newCurrentTab;
+            let self = this;
+            $('.et-hero-tab').each(function() {
+                let id = $(this).attr('href');
+                let offsetTop = $(id).offset().top - self.tabContainerHeight;
+                let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+                if ($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+                    newCurrentId = id;
+                    newCurrentTab = $(this);
+                }
+            });
+            if (this.currentId != newCurrentId || this.currentId === null) {
+                this.currentId = newCurrentId;
+                this.currentTab = newCurrentTab;
+                this.setSliderCss();
+            }
+        }
+
+        setSliderCss() {
+            let width = 0;
+            let left = 0;
+            if (this.currentTab) {
+                width = this.currentTab.css('width');
+                left = this.currentTab.offset().left;
+            }
+            $('.et-hero-tab-slider').css('width', width);
+            $('.et-hero-tab-slider').css('left', left);
+        }
+
+    }
+
+    new StickyNavigation();
+</script>
+<script>
+    var cards = $('#card-slider .slider-item').toArray();
+
+    startAnim(cards);
+
+    function startAnim(array) {
+        if (array.length >= 4) {
+            TweenMax.fromTo(array[0], 0.5, {
+                x: 0,
+                y: 0,
+                opacity: 0.75
+            }, {
+                x: 0,
+                y: -120,
+                opacity: 0,
+                zIndex: 0,
+                delay: 0.03,
+                ease: Cubic.easeInOut,
+                onComplete: sortArray(array)
+            });
+
+            TweenMax.fromTo(array[1], 0.5, {
+                x: 79,
+                y: 125,
+                opacity: 1,
+                zIndex: 1
+            }, {
+                x: 0,
+                y: 0,
+                opacity: 0.75,
+                zIndex: 0,
+                boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)',
+                ease: Cubic.easeInOut
+            });
+
+            TweenMax.to(array[2], 0.5, {
+                bezier: [{
+                    x: 0,
+                    y: 250
+                }, {
+                    x: 65,
+                    y: 200
+                }, {
+                    x: 79,
+                    y: 125
+                }],
+                boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)',
+                zIndex: 1,
+                opacity: 1,
+                ease: Cubic.easeInOut
+            });
+
+            TweenMax.fromTo(array[3], 0.5, {
+                x: 0,
+                y: 400,
+                opacity: 0,
+                zIndex: 0
+            }, {
+                x: 0,
+                y: 250,
+                opacity: 0.75,
+                zIndex: 0,
+                ease: Cubic.easeInOut
+            }, );
+        } else {
+            $('#card-slider').append('<p>Sorry, carousel should contain more than 3 slides</p>')
+        }
+    }
+
+    function sortArray(array) {
+        clearTimeout(delay);
+        var delay = setTimeout(function() {
+            var firstElem = array.shift();
+            array.push(firstElem);
+            return startAnim(array);
+        }, 3000)
+    }
+</script>
+<script src="box_to_pic.js"></script>
+
+</html>
