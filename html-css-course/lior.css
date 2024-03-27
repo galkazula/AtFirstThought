@@ -1,0 +1,118 @@
+*{
+
+  font-family: "Assistant", sans-serif;
+  
+  
+}
+.Lior-page{
+  margin:0;
+  padding:0;
+  direction:rtl;
+  position: relative;
+  /* margin-top: 150px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.Lior-white-rect{
+  margin:0;
+  padding:0;
+  direction:rtl;
+  position: relative;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+/* justify-content: space-between; */
+}
+
+
+
+.green-tringales{
+  position: absolute;
+  left: 30px;;
+  top:600px;
+}
+
+.Lior-text{
+  flex: 1;
+  margin-right: 100px;
+}
+.Lior-img {
+  margin-right: 150px;
+  border-radius: 116px;
+  width: 437px;
+  height: 621px;
+  object-fit: cover;
+  background: #f0f0f0;
+  box-shadow:  0 0 0 #cccccc,
+               0 0 0 #ffffff,
+                10px 10px 10px #cccccc inset,
+                -10px -10px 10px #ffffff inset;
+  animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
+  /* animation-fill-mode: forwards; */
+}
+.Lior-Header{
+  font-weight: bold;
+  font-size: 85px;
+  color: #161C2D;
+}
+.Lior-subHeader{
+  font-weight: normal;
+  font-size: 36px;
+  color: #161C2D;
+}
+.Lior-littleh1{
+  font-weight: bold;
+  font-size: 24px;
+  color: #161C2D;
+
+}
+.Lior-para1{
+  width: 40vw;
+  font-weight: normal;
+  font-size: 24px;
+  color: #161C2D;
+}
+.Lior-littleh2{
+  font-weight: normal;
+  font-size: 36px;
+  color: #161C2D;
+}
+.Lior-para2{
+  width: 40vw;
+
+  font-weight: normal;
+  font-size: 24px;
+  color: #161C2D;
+}
+
+@media all and (max-width: 1220px) {
+  .Lior-white-rect{
+    display: flex;
+    flex-direction: column;
+    width: 69vw;
+    height: 120vw;
+    background-color: #f9f9f9e3;
+    box-shadow: 5px 5px 10px rgba(0, 4, 4, 0.25);
+    
+  }
+
+  .Lior-img{
+    margin-left: 13vw;
+    margin-top: 10vw;
+    width: 621px;
+    height: 437px;
+    object-fit:fit;
+    object-position: 0 -60px;
+    box-shadow: 5px 5px 10px rgba(0, 4, 4, 0.25);
+
+  }
+  .Lior-para2{
+    display: none;
+  }
+  .Lior-littleh2{
+    display: none;
+  }
+}

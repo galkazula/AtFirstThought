@@ -1,0 +1,119 @@
+/* פסקה ראשונה של במחשבה תחילה */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+.introduction-full{
+  display: flex;
+}
+
+.logo-introudaction{
+margin-bottom: 100px;
+
+}
+.Gefen-Header
+{
+  margin-top: -50px;
+  direction:rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #F64B4B;
+  margin-bottom:-25px;
+  width: 30%;
+
+}
+
+
+.Bemahshava-Header
+{
+  direction:rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 85px;
+  color: #161C2D;
+  letter-spacing: -2px;
+  margin-top:0px; 
+  margin-bottom: -20px; 
+
+}
+.introduction-text{
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items:end;
+}
+.introduction-gallery{
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  justify-content: space-evenly;
+  box-shadow:  0 0 0 #cccccc,
+  0 0 0 #ffffff,
+   10px 10px 10px #cccccc inset,
+   -10px -10px 10px #ffffff inset;
+animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
+border-radius: 116px;
+
+  object-fit:cover;
+}
+.current-img-introduction
+{
+  border-radius: 116px;
+  object-fit: cover;
+
+  background: #f0f0f0;
+
+  width: 98%;
+}
+.creative-lamp-container{
+  display: flex;
+  justify-content: center;
+
+}
+.creative-lamp{
+  bottom: 400px;
+  position:absolute;
+  width: 1000px;
+  flex:0.5;
+  opacity: 0.5;
+}
+.Yeutz-SubHeader{
+  direction:rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: -0.2px;
+  color: #161C2D;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.description-Bemashava{
+  margin-top: 20px;
+  
+  direction:rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  color: #161C2D;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 32px;
+  /* width: 500px; */
+  
+}
+@media all and (max-width: 1220px) {
+.introduction-full{
+  display: flex;
+  flex-direction: column;
+  
+}
+.current-img-introduction{
+  border-radius: 250px;
+}
+.introduction-gallery
+{
+  border-radius: 250px;
+}
+}

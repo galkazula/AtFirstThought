@@ -1,0 +1,268 @@
+.body{
+  /* width: fit-content; */
+}
+.creative-mindset-h1
+{
+  /* margin-top: 250px; */
+  display: block;
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  color: #161C2D;
+  text-align: center;
+}
+
+.creative-page{
+position: relative;
+}
+.green-creative-background{
+  display: none;
+  position: absolute;
+}
+.blue-circle-backround{
+  display: none;
+  position: absolute;
+margin-left: 48%;
+}
+.arrow-vector{
+  position: absolute;
+  margin-top: 300px;
+right: -300px;}
+
+
+.first-part-creativty{
+  display: flex;
+}
+.quote-1{
+  display: block;
+  height: 260px;
+}
+
+.first-coulmn{
+  flex: 1;
+  margin-right: 50px;
+  height: 850px;
+  
+}
+.secend-coulmn{
+  flex: 1.1;
+  
+  height: 1000px;
+}
+.img-giraffe{
+
+  width: 30vw;
+  margin-left: 200px;
+  margin-top: -250px;
+  
+}
+.first-row-creativty{
+  justify-content: space-between;
+  display: flex;
+  height: 430px;
+  margin-bottom: 30px;
+}
+
+.line-creativity-para1{
+  position: absolute;
+  margin-left: 45%;
+  
+}
+.creative-mindset-para1{
+  margin-right: 50px;
+  flex: 0.6;
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: normal;
+  font-size: 27px;
+  color: #161C2D;
+  text-align: right;
+}
+.img-boesh{
+  flex: 0.35;
+  margin-left: -13vw;
+  
+
+}
+
+
+.img-dove{
+  margin-left: 20%;
+  flex: 0.3;
+}
+.arrow-vector{
+  margin-right: 20%;
+  flex: 0.3;
+}
+
+.coulmn1-part2{
+  display: flex;
+  margin-top: -500px;
+}
+.paragraph2{
+
+  flex: 1;
+  height: 850px;
+}
+.What-Creativity-h1{
+  margin-top: 30px;
+  height: 76px;
+  display: block;
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: right;
+  color: #F64B4B;
+
+  margin-right: 30px;
+}
+
+.paragraph-what-creativity{
+  margin-top: 30px;
+  height: 250px;
+  display: block;
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: normal;
+  font-size: 27px;
+  color: #000000;
+  text-align: right;
+  margin-right: 30px;
+}
+.paragraph-what-creativity-bold{
+  margin-top: 30px;
+  height: 350px;
+  display: block;
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  margin-right: 30px;
+}
+.coulmn2-part2{
+  flex: 1.1;
+  
+  height: 850px;
+}
+.quote-2{
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 250px;
+  display: block;
+}
+.img-sun-matka{
+  margin-left: 400px;
+  margin-right: 100px;
+
+  padding-left: 20vw;
+  width: 20vw;
+  display: block;
+}
+
+
+
+/* תחילת עיצוב פסוק */
+.full-quote{
+  display: block;
+  float: right; 
+  margin-top: 50px;
+  margin-right: 70px;
+}
+
+.white-rect-quotes{
+  display: flex;
+  width: 600px;
+  height: 200px;
+  background-color: white;
+  position: relative;  
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.gray-rect-quotes{
+  width: 536px;
+  height: 136px;
+  background-color:#ECF0F4 ;
+  
+}
+.quote-paragraph{
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #191825;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 20px;
+  
+}
+.quote-person{
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight:lighter;
+  font-size: 27px;
+  color: #191825;
+  width: 150px;
+}
+.upper-left-quotes,.lower-right-quotes {
+  position: absolute;
+  width: 72px;
+  height: 61px;
+}
+.upper-left-quotes{
+top: 15px;
+left: 6px;
+}
+.lower-right-quotes{
+    right: 6px;
+    bottom: 15px;
+    rotate: 180deg;
+}
+
+/* סוף פסוק */
+
+@media all and (max-width: 391px) {
+  
+    .img-sun-matka {
+        display: none;
+    }
+    .img-giraffe{
+      display: none;
+    }
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

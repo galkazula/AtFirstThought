@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+.WhatWeDo123{
+  /* margin-top: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.WhatWeDo-Grid{
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 350px 350px 350px;
+  column-gap: 33px;
+  row-gap: 49px;
+}
+@media all and ( min-width: 1151px) and( max-width: 1250px) {
+  .WhatWeDo-Grid{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr; 
+    row-gap: 49px;
+  }
+}
+
+
+
+@media all and (max-width: 1150px) {
+  .WhatWeDo-Grid{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Vector */
+.abstract-background-object{
+  position: absolute;
+  opacity: 0.2;
+}
+
+
+
+
+/*----------------*/
+
+
+
+.read-more-button-row{
+  padding-top: 30px;
+}
+/* כפתור כתום */
+.read-more-button
+{
+margin-top: 40px;
+margin-left: 111px;
+  align-items: center;
+
+background-color:#F6744B ;
+color: white;
+border: none;
+width: 128px;
+height: 59px;
+border-radius: 21px;
+cursor: pointer;
+font-size: 28px;
+font-weight: bold;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+transition: opacity 0.15s;
+
+}
+.read-more-button:hover
+{
+opacity: 0.8;
+}
+.read-more-button:active
+{
+  opacity: 0.5;
+}
+
+.white-rect{
+ background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 383px;
+  border-radius: 32px ;
+  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15) ;
+}
+.horizontal_dotted_line {
+  padding-top: 10px;
+  margin-left: 122px;
+  align-content: center;
+  border-bottom: 10px dotted #F64B4B;
+  width: 100px;
+}
+.thumbnail-row{
+  padding-top: 60px;
+}
+.thumbnail
+{
+  margin-left: 143px;
+  width: 64px;
+  height: 64px;
+}
+.what-are-we-doing-header{
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #191825;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 120%;
+}
+.what-are-we-doing-header1{
+  text-align: center;
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  font-size: 85px;
+  color: #191825;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 120%;
+
+}
